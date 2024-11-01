@@ -1,0 +1,443 @@
+:root {
+    --blue: #5e50f9;
+    --indigo: #6610f2;
+    --purple: #6a008a;
+    --pink: #e91e63;
+    --red: #f96868;
+    --orange: #f2a654;
+    --yellow: #f6e84e;
+    --green: #46c35f;
+    --teal: #58d8a3;
+    --cyan: #57c7d4;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #0f1531;
+    --blue: #5e50f9;
+    --indigo: #6610f2;
+    --purple: #6a008a;
+    --pink: #e91e63;
+    --red: #f96868;
+    --orange: #f2a654;
+    --yellow: #f6e84e;
+    --green: #46c35f;
+    --teal: #58d8a3;
+    --cyan: #57c7d4;
+    --white: #ffffff;
+    --gray: #434a54;
+    --gray-light: #aab2bd;
+    --gray-lighter: #e8eff4;
+    --gray-lightest: #e6e9ed;
+    --black: #000000;
+    --primary: #4b49ac;
+    --secondary: #a3a4a5;
+    --success: #57b657;
+    --info: #248afd;
+    --warning: #ffc100;
+    --danger: #ff4747;
+    --light: #f8f9fa;
+    --dark: #282f3a;
+    --blue-900: #031633;
+    --blue-800: #052c65;
+    --blue-700: #084298;
+    --blue-600: #0a58ca;
+    --blue-500: #0d6efd;
+    --blue-400: #3d8bfd;
+    --blue-300: #6ea8fe;
+    --blue-200: #9ec5fe;
+    --blue-100: #cfe2ff;
+
+    --primary-900: #1f1d7e;
+    --primary-800: #242381;
+    --primary-700: #312f9f;
+    --primary-600: #413fa3;
+    --primary-500: #4b49ac;
+    --primary-400: #4745aa;
+    --primary-300: #6b69c2;
+    --primary-200: #7574c9;
+    --primary-100: #9796db;
+
+    --gray-900: #212529;
+    --gray-800: #343a40;
+    --gray-700: #495057;
+    --gray-600: #6c757d;
+    --gray-500: #adb5bd;
+    --gray-400: #ced4da;
+    --gray-300: #dee2e6;
+    --gray-200: #e9ecef;
+    --gray-100: #f8f9fa;
+    --white: #ffffff;
+    --black: #000000;
+
+    --trans-1: 0.2s all;
+    --trans-2: 0.3s all;
+}
+
+/* toggle */
+.toggle {
+    align-items: center;
+    border-radius: 100px;
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.toggle:last-of-type {
+    margin: 0;
+}
+
+.toggle__input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.toggle__input:disabled + .toggle-track {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.toggle-track {
+    background: #e5efe9;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    height: 25px;
+    margin-right: 12px;
+    position: relative;
+    width: 50px;
+}
+
+.toggle-indicator {
+    align-items: center;
+    background: #ffffff;
+    border-radius: 24px;
+    bottom: 3px;
+    display: flex;
+    height: 19px;
+    justify-content: center;
+    left: 2px;
+    position: absolute;
+    transition: 0.25s;
+    width: 19px;
+}
+
+.checkMark {
+    fill: #fff;
+    height: 19px;
+    width: 19px;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.toggle__input:checked + .toggle-track .toggle-indicator {
+    background: var(--primary-500);
+    transform: translateX(26px);
+}
+
+.toggle__input:checked + .toggle-track .toggle-indicator .checkMark {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* gap */
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.gap-4 {
+    gap: 1.5rem;
+}
+
+/* checkbox */
+
+.form-check-primary.form-check
+    label
+    input[type="checkbox"]
+    + .input-helper:before,
+.form-check-primary.form-check
+    label
+    input[type="radio"]
+    + .input-helper:before {
+    border-color: var(--primary);
+}
+
+.form-check-primary.form-check
+    label
+    input[type="checkbox"]:checked
+    + .input-helper:before,
+.form-check-primary.form-check
+    label
+    input[type="radio"]:checked
+    + .input-helper:before {
+    background: var(--primary);
+}
+
+/* .btn-check {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important;
+    pointer-events: none !important;
+}
+
+.btn-check:checked + .btn {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.form-check
+    .form-check-label
+    input[type="checkbox"]
+    + .input-helper.input-helper-custom:before {
+    margin-top: 12px;
+}
+
+.form-check
+    .form-check-label
+    input[type="checkbox"]
+    + .input-helper.input-helper-custom:after {
+    margin-top: 12px;
+} */
+
+/* accordion */
+
+.accordion {
+    background-color: transparent;
+    border-radius: 0.35rem !important;
+    box-shadow: none;
+    width: 100%;
+}
+
+.accordian-donasi tr td {
+    padding: 0.5rem 0;
+}
+
+.accordian-donasi tr td:first-child {
+    padding-right: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.accordian-donasi tr td:last-child p:first-child {
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary);
+    border-radius: 0.35rem !important;
+}
+
+.accordion-button:not(.collapsed) h6 {
+    color: var(--white);
+}
+
+.accordion-button:not(.collapsed) .accordion-logo {
+    background-color: var(--white);
+    padding: 0.5rem;
+}
+
+.accordion-button {
+    color: var(--primary-800);
+    border-radius: 0.35rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+.accordion-button::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "\2212";
+    color: var(--primary-800);
+    font-size: 1.5em;
+}
+
+.accordion-button:not(.collapsed)::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "\002b";
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.accordion-button::after {
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--white);
+}
+
+/* input file */
+
+input[type="file"]::file-selector-button {
+    height: 100%;
+    margin-right: 20px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    /* font-size: 0.85rem !important; */
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: backgound 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+    color: white;
+    background-color: var(--primary-700);
+}
+
+input[type="file"]::file-selector-button:focus {
+    color: white;
+    background-color: var(--primary-300);
+    box-shadow: 0 0 0 0.2rem rgba(75, 73, 172, 0.5);
+}
+
+/* ck image */
+
+.expandable-table img {
+    width: 50%;
+}
+
+/* success image */
+
+.success-image {
+    width: 50%;
+}
+.failed-image {
+    width: 40%;
+}
+
+@media screen and (max-width: 992px) {
+    .success-image {
+        width: 90%;
+    }
+    .failed-image {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .step-wizard-item {
+        min-width: 120px;
+    }
+
+    .step-wizard-custom {
+        min-width: 70px !important;
+    }
+
+    .btn-filter {
+        width: 100%;
+    }
+
+    .success-image {
+        width: 100%;
+    }
+    .failed-image {
+        width: 80%;
+    }
+
+    .input-icon {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 360px) {
+    .step-wizard-item {
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .step-wizard-item {
+        min-width: 100px;
+    }
+}
+
+.dataTables_wrapper .dataTables_processing {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background-color: var(--gray-100);
+    width: 10rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.image-align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-align-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.image-align-right {
+    float: right;
+    margin-left: 10px;
+}
+
+.image-align-center img,
+.image-align-left img,
+.image-align-right img {
+    width: 100%;
+}
+
+.image-inline {
+    display: inline;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 6px solid #ccc;
+    margin: 1.5em 0px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
