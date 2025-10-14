@@ -19,16 +19,7 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'gender' => 'perempuan',
-            'password' => Hash::make('123456'),
-            'access' => 'admin',
-            'status' => 'active',
-        ])->assignRole('admin');
-
-        User::create([
-            'name' => 'Kevin Iansyah',
-            'email' => 'keviniansyah04@gmail.com',
-            'gender' => 'laki-laki',
-            'password' => Hash::make('123456'),
+            'password' => Hash::make('admin_clarities_123'),
             'access' => 'admin',
             'status' => 'active',
         ])->assignRole('admin');
