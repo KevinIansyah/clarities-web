@@ -16,11 +16,11 @@
 
   <meta property="og:title" content="@yield('og-title', 'Clarities - Laboratorium Hukum UPN Veteran Jatim')">
   <meta property="og:description" content="@yield('og-description', 'Laboratorium Hukum Fakultas Hukum UPN Veteran Jawa Timur.')">
-  <meta property="og:image" content="{{ asset('images/logo.png') }}">
+  <meta property="og:image" content="{{ asset('images/tab-logo.png') }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ url()->current() }}">
 
-  <link rel="shortcut icon" href="{{ asset('images/logo.png') }}">
+  <link rel="shortcut icon" href="{{ asset('images/tab-logo.png') }}">
 
   <link rel="stylesheet" href="{{ asset('vendors/feather/feather.css') }}">
   <link rel="stylesheet" href="{{ asset('vendors/ti-icons/css/themify-icons.css') }}">

@@ -7,6 +7,7 @@ use App\Models\Pelatihan;
 use App\Models\TemporaryImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -106,12 +107,12 @@ class PelatihanController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Pelatihan updated successfully',
+                'message' => 'Pelatihan deleted successfully',
             ], 200);
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Failed to update pelatihan',
+                'message' => 'Failed to delete pelatihan',
                 'error' => $e->getMessage()
             ], 500);
         }
@@ -152,7 +153,7 @@ class PelatihanController extends Controller
                 'tag' => 'required|string',
                 'status' => 'required|string|in:active,inactive',
                 'read' => 'required|integer',
-                'highlight' => 'required|string|in:active, inactive',
+                'highlight' => 'required|string|in:active,inactive',
             ]);
 
             $slug = Str::slug($validatedData['title']);

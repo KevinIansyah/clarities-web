@@ -1,7 +1,7 @@
 <nav class="fixed-top navbar navbar-expand-lg @if (!request()->is('/')) scrolled @endif" data-bs-theme="dark">
   <div class="container py-2">
     <a href="/" class="navbar-brand d-flex align-items-center gap-2 text-decoration-none">
-      <img src="{{ asset('images/logo.png') }}" alt="logo lab hukum clarities">
+      <img style="width: 100%; height: 2rem;" src="{{ asset('images/logo.png') }}" alt="logo lab hukum clarities">
       <h5 class="text-white mb-0">CLARITIES</h5>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
